@@ -13,5 +13,9 @@ public class adminController {
 		return "Hello! User";
 	}
 	
+	public String showUser() {
+		return "user";
+	}
+	
 }
 	 
