@@ -21,7 +21,7 @@ public class SpringSecurityConfig {
 		);
 		
 		http.formLogin(withDefaults());
-		http.httpBasic(withDefaults());
+		http.httpBasic(basic -> basic.disable());
 	
 		
 		return http.build();
