@@ -20,8 +20,8 @@ public class SpringSecurityConfig {
 				.anyRequest().authenticated()
 		);
 		
-		http.formLogin(withDefaults());
-		http.httpBasic(basic -> basic.disable());
+		http.formLogin(form -> form.disable());
+		http.httpBasic(withDefaults());
 	
 		
 		return http.build();
