@@ -8,13 +8,14 @@ import org.springframework.web.bind.annotation.RestController;
 @RequestMapping("/ssl")
 public class adminController {
 
-	@GetMapping("/getUser")
+	@GetMapping("/admin")
 	public String getUser() {
-		return "Hello! User";
+		return "Hello! admin";
 	}
 	
-	public String showUser() {
-		return "user";
+	@GetMapping("/welcome")
+	public String welcome() {
+		return "Welcome";
 	}
 	
 }
